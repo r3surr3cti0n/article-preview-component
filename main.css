@@ -109,6 +109,9 @@ body {
 }
 
 .share-btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	align-self: flex-start;
 	position: absolute;
 	right: 0;
@@ -121,4 +124,51 @@ body {
 	border-radius: 100vw;
 	background-color: var(--Light-Grayish-Blue);
 	color: var(--Very-Dark-Grayish-Blue);
+}
+
+.share-item-box {
+	z-index: -1;
+	opacity: 0;
+
+	min-width: 50%;
+	position: absolute;
+	display: flex;
+	align-items: center;
+	gap: 1em;
+	padding: 1em 2em;
+	border-radius: 0.5em;
+	color: var(--Light-Grayish-Blue);
+	background: var(--Very-Dark-Grayish-Blue);
+	right: -225%;
+	top: -190%;
+	transition: all 0.3s ease-in-out;
+}
+
+.share-active {
+	z-index: 10;
+	opacity: 1;
+}
+
+.share-item-box::after {
+	position: absolute;
+	bottom: -0.75em;
+	left: calc(50% - 0.5em);
+	content: "";
+	display: block;
+	width: 0.4em;
+	height: 1em;
+	border-left: 1em solid transparent;
+	border-right: 1em solid transparent;
+	border-top: 1em solid var(--Very-Dark-Grayish-Blue);
+}
+
+.share-item-box i {
+	font-size: 1.125rem;
+}
+
+.item-title {
+	text-transform: uppercase;
+	color: var(--Grayish-Blue);
+	letter-spacing: 2px;
+	font-size: 0.8rem;
 }
