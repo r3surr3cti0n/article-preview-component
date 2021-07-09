@@ -67,7 +67,7 @@ body {
 .content {
 	flex-basis: 20em;
 	flex-grow: 1;
-	padding: 2em;
+	padding: 2em 2.5em;
 }
 
 .content > * + * {
@@ -78,4 +78,47 @@ body {
 	font-size: 1.2rem;
 	color: var(--Very-Dark-Grayish-Blue);
 	font-weight: 700;
+}
+
+.desc {
+	color: var(--Desaturated-Dark-Blue);
+}
+
+.share-box {
+	position: relative;
+	display: flex;
+	align-items: center;
+	gap: 1em;
+}
+
+.profile-pic {
+	border-radius: 100vw;
+	max-width: 2.8125em;
+}
+
+.name {
+	font-weight: 700;
+	font-size: 0.9rem;
+	color: var(--Very-Dark-Grayish-Blue);
+}
+
+.date {
+	font-weight: 500;
+	font-size: 0.8rem;
+	color: var(--Grayish-Blue);
+}
+
+.share-btn {
+	align-self: flex-start;
+	position: absolute;
+	right: 0;
+	cursor: pointer;
+}
+
+.share-icon {
+	padding: 0.65em;
+	font-size: 0.9rem;
+	border-radius: 100vw;
+	background-color: var(--Light-Grayish-Blue);
+	color: var(--Very-Dark-Grayish-Blue);
 }
