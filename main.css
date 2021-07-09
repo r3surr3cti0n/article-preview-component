@@ -29,3 +29,28 @@ body {
 	align-items: center;
 	justify-content: center;
 }
+
+/* article */
+.article {
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 50em;
+	border-radius: 0.8em;
+	box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.2);
+}
+
+.article > * {
+	width: 100%;
+}
+
+.article-img {
+	border-top-left-radius: 0.4em;
+	border-bottom-left-radius: 0.4em;
+	flex-basis: 20em;
+}
+
+.content {
+	flex-basis: 20em;
+	flex-grow: 1;
+	padding: 2em;
+}
