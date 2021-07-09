@@ -61,10 +61,21 @@ body {
 	border-top-left-radius: 0.4em;
 	border-bottom-left-radius: 0.4em;
 	flex-basis: 20em;
+	background: url(images/drawers.jpg) no-repeat 20% center / cover;
 }
 
 .content {
 	flex-basis: 20em;
 	flex-grow: 1;
 	padding: 2em;
+}
+
+.content > * + * {
+	margin-top: 1em;
+}
+
+.title {
+	font-size: 1.2rem;
+	color: var(--Very-Dark-Grayish-Blue);
+	font-weight: 700;
 }
